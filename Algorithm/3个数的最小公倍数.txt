@@ -1,0 +1,28 @@
+https://blog.csdn.net/dreamispossible/article/details/79945944（3种方法）
+
+#include<stdio.h>
+int max(int a,int b,int c)  //自定义函数max
+{
+  if(a>b&&a>c)            // 若a的值最大
+      return a;           // 返回a
+  else if(b>a&&b>c)       // 若b的值最大
+      return b;           // 返回b
+  else
+      return c;           //   否则返回c
+}
+void main()
+{
+  int x,y,z,i,j,k;
+  printf("请输入三个数：");
+  scanf("%d%d%d",&x,&y,&z); // 从键盘输入三个数
+  k = max(x,y,z);          //调用max函数求出其中的最大值
+  i= 1;
+  1hile(1)                 //while循环，条件值为1
+  { 
+    j = k * i;
+    if((j%x==0)&&(j%y==0)&&(j%z==0)) //满足条件，退出循环
+        break;
+    i++;
+  }
+  printf("最小公倍数为%d\n",j);
+}
